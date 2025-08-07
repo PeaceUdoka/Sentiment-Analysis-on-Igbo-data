@@ -1,0 +1,75 @@
+{
+  "best_global_step": 1204,
+  "best_metric": 0.7913549459684123,
+  "best_model_checkpoint": "./igbo_afriberta_large_finetuned3/checkpoint-1204",
+  "epoch": 2.0,
+  "eval_steps": 500,
+  "global_step": 1204,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.8305647840531561,
+      "grad_norm": 7.620940685272217,
+      "learning_rate": 1.8342192691029902e-05,
+      "loss": 0.7112,
+      "step": 500
+    },
+    {
+      "epoch": 1.0,
+      "eval_accuracy": 0.7830423940149626,
+      "eval_loss": 0.5766383409500122,
+      "eval_runtime": 63.4661,
+      "eval_samples_per_second": 18.955,
+      "eval_steps_per_second": 1.197,
+      "step": 602
+    },
+    {
+      "epoch": 1.6611295681063123,
+      "grad_norm": 14.395302772521973,
+      "learning_rate": 1.6681063122923587e-05,
+      "loss": 0.4749,
+      "step": 1000
+    },
+    {
+      "epoch": 2.0,
+      "eval_accuracy": 0.7913549459684123,
+      "eval_loss": 0.5639145374298096,
+      "eval_runtime": 61.6191,
+      "eval_samples_per_second": 19.523,
+      "eval_steps_per_second": 1.233,
+      "step": 1204
+    }
+  ],
+  "logging_steps": 500,
+  "max_steps": 6020,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 10,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "EarlyStoppingCallback": {
+      "args": {
+        "early_stopping_patience": 2,
+        "early_stopping_threshold": 0.0
+      },
+      "attributes": {
+        "early_stopping_patience_counter": 0
+      }
+    },
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": false
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 335441241757440.0,
+  "train_batch_size": 16,
+  "trial_name": null,
+  "trial_params": null
+}
